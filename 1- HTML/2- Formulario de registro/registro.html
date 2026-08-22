@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <form action="#" method="POST">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required tabindex="1">
+        <br><br>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Ej: correo@ejemplo.com" required tabindex="2">
+        <br><br>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" placeholder="Mínimo 8 caracteres" minlength="8" required tabindex="3">
+        <br><br>
+
+        <p>Selección de género:</p>
+        <input type="radio" id="femenino" name="genero" value="femenino" required tabindex="4">
+        <label for="femenino">Femenino</label>
+        
+        <input type="radio" id="masculino" name="genero" value="masculino" required tabindex="5">
+        <label for="masculino">Masculino</label>
+        
+        <input type="radio" id="otro" name="genero" value="otro" required tabindex="6">
+        <label for="otro">Otro</label>
+        <br><br>
+
+        <p>Intereses:</p>
+        <input type="checkbox" id="musica" name="intereses" value="Musica" tabindex="7">
+        <label for="musica">Música</label>
+        
+        <input type="checkbox" id="deportes" name="intereses" value="Deportes" tabindex="8">
+        <label for="deportes">Deportes</label>
+        
+        <input type="checkbox" id="literatura" name="intereses" value="Literatura" tabindex="9">
+        <label for="literatura">Literatura</label>
+        <br><br>
+
+        <label for="comentarios">Comentarios adicionales:</label><br>
+        <textarea id="comentarios" name="comentarios" placeholder="Ej: Me gusta la música y el deporte" required tabindex="10"></textarea>
+        <br><br>
+
+        <label for="pais">País:</label>
+        <select id="pais" name="pais" required tabindex="11">
+            <option value="">Seleccione una opción...</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Chile">Chile</option>
+        </select>
+        <br><br>
+
+        <button type="submit" tabindex="12">Registrarse</button>
+    </form>
+</body>
+</html>
