@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog con Artículos y Tabla de Contactos</title>
+</head>
+<body>
+
+    <header>
+        <h1>El Blog de Desarrollo y Accesibilidad</h1>
+        <nav aria-label="Navegación principal del blog">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#articulos">Artículos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main tabindex="0">
+        <article>
+            <h2>La importancia de la Semántica HTML</h2>
+            <p>Utilizar etiquetas semánticas es fundamental para el desarrollo web moderno. Esto no solo ayuda a los motores de búsqueda, sino que mejora drásticamente la experiencia del usuario final.</p>
+            <p>Algunas de las ventajas principales incluyen:</p>
+            <ul>
+                <li>Mejor interpretación por parte de los lectores de pantalla.</li>
+                <li>Un código mucho más estructurado y fácil de mantener a largo plazo.</li>
+                <li>Mayor claridad en la jerarquía de la información presentada.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Guía paso a paso para un buen artículo</h2>
+            <p>Escribir contenido bien estructurado es clave para retener a los lectores. A continuación, te mostramos los pasos esenciales para lograr un artículo de alta calidad en tu blog:</p>
+            <ol>
+                <li>Define un título principal claro y atractivo.</li>
+                <li>Desarrolla el contenido utilizando párrafos cortos y concisos.</li>
+                <li>Añade listas, enlaces y recursos visuales para facilitar la lectura.</li>
+            </ol>
+        </article>
+    </main>
+
+    <aside>
+        <h2>Recursos Externos</h2>
+        <ul>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">Documentación oficial de HTML en MDN</a></li>
+            <li><a href="https://www.w3.org/WAI/" target="_blank">Iniciativa de Accesibilidad Web (WAI)</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <h2>Directorio de Contactos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Cargo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana Pérez</td>
+                    <td>ana@example.com</td>
+                    <td>Desarrolladora Frontend</td>
+                </tr>
+                <tr>
+                    <td>Juan Gómez</td>
+                    <td>juan@example.com</td>
+                    <td>Especialista en Accesibilidad</td>
+                </tr>
+                <tr>
+                    <td>María López</td>
+                    <td>maria@example.com</td>
+                    <td>Diseñadora UX/UI</td>
+                </tr>
+            </tbody>
+        </table>
+    </footer>
+
+</body>
+</html>
