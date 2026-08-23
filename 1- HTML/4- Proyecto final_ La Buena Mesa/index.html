@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Buena Mesa</title>
+</head>
+<body>
+
+    <header id="inicio">
+        <h1>La buena mesa</h1>
+        <p>Comida casera, sabor real</p>
+
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="ubicacion.html">¿Como llegar?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="menu">
+            <h2>Menu del dia</h2>
+
+            <article>
+                <h3>Milanesa con papas</h3>
+                <p>Clasica milanesa de carne servida con papas fritas.</p>
+            </article>
+
+            <article>
+                <h3>Ravioles al disco</h3>
+                <p>Ravioles de ricota y verdura con salsa casera y queso rallado.</p>
+            </article>
+
+            <article>
+                <h3>Ensalada cesar</h3>
+                <p>Lechuga, crutones, pollo grillado y aderezo cesar.</p>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="nosotros">
+            <h2>Sobre nosotros</h2>
+            <p>Somos un restaurante familiar con mas de 20 años. Nos apasiona la buena comida y la atencion calida.</p>
+        </section>
+
+        <hr>
+
+        <section id="reservas">
+            <h2>Reserva tu mesa</h2>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos de la reserva:</legend>
+
+                    <p>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej: Luciano">
+                    </p>
+
+                    <p>
+                        <label for="email">Correo electronico:</label>
+                        <input type="email" id="email" name="email" placeholder="Ej: correo@ejemplo.com">
+                    </p>
+
+                    <p>
+                        <label for="fecha">Fecha:</label>
+                        <input type="date" id="fecha" name="fecha">
+                    </p>
+
+                    <p>
+                        <label for="hora">Fecha:</label>
+                        <input type="time" id="hora" name="hora">
+                    </p>
+
+                    <p>
+                        <label for="personas">Nombre:</label>
+                        <input type="number" id="personas" name="personas" placeholder="Ej: 2">
+                    </p>
+
+                    <p>
+                        <label for="comentario">Comentario adicional</label><br>
+                        <textarea id="comentario" name="comentario" rows="4" cols="30" placeholder="Ej: preferencia de ubicacion, sin gluten, etc..."></textarea>
+                    </p>
+
+                    <button type="submit">Reserva</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+</body>
+</html>
