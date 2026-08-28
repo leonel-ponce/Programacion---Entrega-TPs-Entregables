@@ -1,0 +1,181 @@
+/*
+Variables CSS (Punto 6)
+Definimos variables globales en :root para reutilizar los mismos
+valores de color en distintas partes del sitio y poder cambiar 
+el tema completo modificando solo estos valores.
+*/
+
+:root {
+    --color-fondo: #eaf6fb;
+    --color-texto: #14425c;
+    --color-acento: #3b9fd1;
+}
+
+/*
+Estilos generales (Punto 1)
+Aplicamos estilos generales a todos los elementos del sitio.
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: var(--color-acento);
+}
+
+h2 {
+    color: var(--color-texto);
+    border-bottom: 2px solid var(color-acento);
+    padding-bottom: 5px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/*
+2. Selectores en CSS
+Un párrafo con selector por ID, otro por CLASS y otro por TAG.
+*/
+
+#parrafo-id {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.parrafo-class {
+    color: #2980b9;
+    font-style: italic;
+}
+
+p {
+    line-height: 1.4;
+}
+
+/*
+3. Modificador de Texto
+*/
+
+/* Titulo con sombra y en mayúsculas */
+.titulo-sombra {
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    letter-spacing: 2px;
+}
+
+/* Párrafo con interlineado y espaciado entre letras amplios */
+.parrafo-espaciado {
+    line-height: 2.2;
+    letter-spacing: 3px;
+}
+
+/* Cita en cursiva con otra tipografía */
+.cita {
+    font-style: italic;
+    font-family: 'Georgia', serif;
+    border-left: 4px solid var(--color-acento);
+    padding-left: 15px;
+    color: #555;
+}
+
+/*
+4. Modelo De Caja
+*/
+
+.tarjeta {
+    border: 2px solid var(--color-acento);
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--color-fondo);
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    /* 
+    Diferencia entre box-sizing: border-box y content-box:display:
+    
+    - content-box (valor por defecto): el ancho/alto que definamos con 
+    "width" y "height" corresponde SOLO al contenido. El padding y el 
+    border se SUMAN por fuera de ese ancho, por lo que la caja final termina
+    siendo más grande que el "widht" declarado.
+
+    - border-box: el ancho/alto que definimos con "width" y "height" incluye 
+    el contenido + el padding + el border. Es decir, el padding y el border se restan
+    "hacia dentro" y la caja final mid exactamente lo que declaramos en "width" y "height".
+    Por eso es la opción más predecible para maquetar.
+    */  
+    box-sizing: border-box;
+}
+
+.tarjeta h4 {
+    margin-top: 0;
+    color: var(--color-texto);
+}
+
+.tarjeta-perfil {
+    max-width: 260px;
+}
+
+/*
+5. DISPLAY Y VISIBILITY
+*/
+
+.tarjeta-mini {
+    width: 120px;
+    text-align: center;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+/* a. Mostradas con display: block -> cada una ocupa toda su linea
+ y se apilan una abajo de la otra */
+ .galeria-block .tarjeta-mini {
+    display: block;
+ }
+
+ /* b. Mostradas con display: inline -> pierden el modelo de caja 
+  completo: no se les puede aplicar width, heigth, ni margin/padding
+  vertical de forma efectiva, y quedan una al lado de la otra sin 
+  respetar tamaño de tarjeta. */
+.galeria-inline .tarjeta-mini {
+    display: inline;
+    margin: 0 5px;    
+}
+
+/* c. Mostradas con display: inline-block -> se ubican una al lado de 
+la otra PERO conservan el modelo de caja completo y respetan width, height, margin y padding vertical. */
+.galeria-inline-block .tarjeta-mini {
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Botón que desaparece completamente del flujo del documento */
+.btn-none {
+    display: none;
+}
+
+/* Botón que se oculta visualmente pero nsigue ocupando su espacio */
+.btn-hidden {
+    visibility: hidden;
+}
+
+/*
+   6. Variables CSS
+*/
+
+.tarjeta-variable {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    border-color: var(--color-acento);
+}

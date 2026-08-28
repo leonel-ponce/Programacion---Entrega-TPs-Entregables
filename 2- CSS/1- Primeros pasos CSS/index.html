@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Páctico: Introducción a CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main>
+
+        <header>
+            <h1>Trabajo Páctico: Introducción a CSS</h1>
+            <p>Resolución completa con ejemplos prácticos.</p>
+        </header>
+
+        <section id="introduccion">
+            <h2>Introducción a CSS</h2>
+            <P> 
+                CSS significa <strong>Cascading Style Sheets</strong> (Hojas de Estilo en Cascada). 
+                Es el lenguaje que se usa para darle estilo y presentación visual a los documentos HTML,
+                es decir, controla colores, tamaños, espaciados y la disposición de los elementos en la
+                pantalla. Se llama "en cascada" porque los estilos se van aplicando y combinando siguiendo
+                un order de prioridad. CSS permite separar el contenido (HTML) de la presentación (estilos),
+                lo que hace que el código sea más ordenado y fácil de mantener. Este documento está linkeado con el archivo <code>styles.css</code>.
+            </p>
+        </section>
+
+        <section id="selectores">
+            <h2>2. Selectores en CSS</h2>
+
+            <p id="parrafo-id"> Este es un párrafo con un selector por ID.</p>
+            <p class="parrafo-class"> Este párrafo tiene un selector por CLASS.</p>
+            <p> Este párrafo tiene un selector por TAG.</p>
+        </section>
+
+        <section id="texto">
+            <h2>3. Modificación de Teto</h2>
+
+            <h3 class="titulo-sombra">Título con sombra y mayúsculas</h3>
+
+            <p class="parrafo-espaciado">
+                Este párrafo tiene mayor interlineado (line-height) y mayor espaciado entre letras (letter-spacing)
+                para poder apreciear bien el efecto de ambar propiedades sobre el texto.
+            </p>
+
+            <blockquote class="cita">
+                "Esta es una cita con cursiva y otra fuente distinta."
+            </blockquote>
+        </section>
+
+        <section id="modelo-caja">
+            <h2>4. Modelo de Caja</h2>
+            <h3>Ejercicio: Diseño de tarjeta</h3>
+
+            <div class="tarjeta tarjeta-perfil">
+                <h4>Tarjeta de Perfil</h4>
+                <p>Esta tarjeta muestra border, padding, margin, background-color, border-radius y box-shadow.</p>
+            </div>
+        </section>
+
+        <section id="display-visibility">
+            <h2>5. Display y Visibility</h2>
+
+            <h3>Ejercicio: Galería de Tarjetas</h3>
+
+            <h4>Block</h4>
+            <div class="galeria galeria-block">
+                <div class="tarjeta tarjeta-mini">Tarjeta 1</div>
+                <div class="tarjeta tarjeta-mini">Tarjeta 2</div>
+                <div class="tarjeta tarjeta-mini">Tarjeta 3</div>
+            </div>
+
+            <h4>Inline</h4>
+            <div class="galeria galeria-inline">
+                <div class="tarjeta tarjeta-mini">Tarjeta 1</div>
+                <div class="tarjeta tarjeta-mini">Tarjeta 2</div>
+                <div class="tarjeta tarjeta-mini">Tarjeta 3</div>
+            </div>
+
+            <h4>Inline-Block</h4>
+            <div class="galeria galeria-inline-block">
+                <div class="tarjeta tarjeta-mini">Tarjeta 1</div>
+                <div class="tarjeta tarjeta-mini">Tarjeta 2</div>
+                <div class="tarjeta tarjeta-mini">Tarjeta 3</div>
+            </div>
+
+            <h4>Diferencia entre display: none y visibility: hidden</h4>
+            <button class="btn-none">Botón con display: none</button>
+            <button class="btn-hidden">Botón con visibility: hidden</button>
+            
+            <p>
+                La diferencia es que <code>display: none</code> quita completamente el elemento del
+                flujo del documento (como si no existiera: no ocupa espacio y no se puede interactuar
+                con él), mientras que <code>visibility: hidden</code> lo oculta visualmente pero
+                sigue ocupando su espacio en la página (el hueco queda ahí, aunque no se vea el contenido).
+            </p>
+        </section>
+
+        <section id="variables">
+            <h2>6. Variables CSS</h2>
+            <h3>Ejercicio: Tema de Colores</h3>
+
+            <div class="tarjeta tarjeta-variables">
+                <h4>Tarjeta con Variables CSS</h4>
+                <p>El color de fondo, texto y borde se controlan con variables definidas en : root.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Resolución del Trabajo Práctico - Programación III</p>
+        </footer>
+    </main>
+    
+</body>
+</html>
