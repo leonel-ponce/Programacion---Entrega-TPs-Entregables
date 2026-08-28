@@ -1,0 +1,122 @@
+/* -------------------------
+    VARIABLES CSS
+    Colores de fondo, texto y acento centralizados en :rood
+    para poder cambiar el tema completo modificando un solo lugar.
+------------------------- */
+:root {
+    --color-fondo: #ffffff;
+    --color-texto: #14425c;
+    --color-acento: #3b9fd1;
+    --color-acento-hover: #2678a1;
+}
+
+/* -------------------------
+    ESTILOS GENERALES
+------------------------- */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+header h1{
+    color: var(--color-acento);
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: var(--color-acento);
+    text-align: center;
+}
+
+/*----------------------------
+    GALERÍA 
+    Contenedor de las tarjetas de producto.
+    ----------------------------- */
+
+.galeria {
+    text-align: center;
+}
+
+/* -----------------------------
+    TARJETA DE PRODUCTO
+    Modelo de caja: border, padding, margin, border-radius, box-shadow.
+    display: inline-block para que las tarjetas queden una al lado de la
+    otra sin perder el modelo de caja.
+    ----------------------------- */
+
+.tarjeta-producto {
+    display: inline-block;
+    width: 200px;
+    background-color: var(--color-fondo);
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    vertical-align: top;
+}
+
+/* Imagen simulada del producto (cuadrado de color) */
+.imagen-producto {
+    width: 100%;
+    height: 120px;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+/* Título del producto en mayúsculas */
+.titulo-producto {
+    text-transform: uppercase;
+    color: var(--color-acento);
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 8px 0;
+}
+
+/* Descripción breve del producto */
+.descripcion-producto {
+    color: var(--color-texto);
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 15px;
+}
+
+
+/* ---------------------------------------
+    BOTÓN DE COMPRA
+    Pseudoclase :hover para cambiar el color al pasar el mouse.
+    ---------------------------------------- */
+.btn-comprar {
+    background-color: var(--color-acento);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-comprar:hover {
+    background-color: var(--color-acento-hover);
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+    font-size: 13px;
+}
